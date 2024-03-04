@@ -1,2 +1,0 @@
-class Membro < ApplicationRecord
-end
