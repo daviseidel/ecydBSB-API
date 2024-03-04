@@ -1,0 +1,2 @@
+class Membro < ApplicationRecord
+end
