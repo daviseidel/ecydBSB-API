@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  etapa: MyString
+  rosto: MyString
+  rg: 1
+  celular: 1
+  anoDeIncricao: 1
+  localEcyd: 1
+  resticao: MyString
+
+two:
+  nome: MyString
+  etapa: MyString
+  rosto: MyString
+  rg: 1
+  celular: 1
+  anoDeIncricao: 1
+  localEcyd: 1
+  resticao: MyString
