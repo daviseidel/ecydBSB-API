@@ -6,9 +6,9 @@ class CreateMembros < ActiveRecord::Migration[7.1]
       t.string :rosto
       t.integer :rg
       t.integer :celular
-      t.integer :anoDeIncricao
+      t.integer :anoDeInscricao
       t.integer :localEcyd
-      t.string :resticao
+      t.string :restricao
 
       t.timestamps
     end

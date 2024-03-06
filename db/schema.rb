@@ -10,16 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_03_04_185752) do
+ActiveRecord::Schema[7.1].define(version: 2024_03_06_142525) do
   create_table "membros", force: :cascade do |t|
     t.string "nome"
     t.string "etapa"
     t.string "rosto"
     t.integer "rg"
     t.integer "celular"
-    t.integer "anoDeIncricao"
+    t.integer "anoDeInscricao"
     t.integer "localEcyd"
-    t.string "resticao"
+    t.string "restricao"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

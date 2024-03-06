@@ -6,9 +6,9 @@ one:
   rosto: MyString
   rg: 1
   celular: 1
-  anoDeIncricao: 1
+  anoDeInscricao: 1
   localEcyd: 1
-  resticao: MyString
+  restricao: MyString
 
 two:
   nome: MyString
@@ -16,6 +16,6 @@ two:
   rosto: MyString
   rg: 1
   celular: 1
-  anoDeIncricao: 1
+  anoDeInscricao: 1
   localEcyd: 1
-  resticao: MyString
+  restricao: MyString
