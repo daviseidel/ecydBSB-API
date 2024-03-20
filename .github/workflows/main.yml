@@ -1,0 +1,13 @@
+name: Render
+on: [pull_request]:
+jobs:
+  deploy:
+    name: Wait for Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Render Deployment
+        uses: sws2apps/render-deployment@v1.6.0
+        with:
+          serviceId: zXEsve7sl6s
+          apiKey: null
+          multipleDeployment: null
