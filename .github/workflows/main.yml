@@ -1,5 +1,5 @@
 name: Render
-on: [pull_request]:
+on: [pull_request]
 jobs:
   deploy:
     name: Wait for Deploy
@@ -9,5 +9,6 @@ jobs:
         uses: sws2apps/render-deployment@v1.6.0
         with:
           serviceId: zXEsve7sl6s
-          apiKey: null
-          multipleDeployment: null
+          apiKey: rnd_yA9T3avI00Gm3jqvckFaU8yLJhuj
+          multipleDeployment: false
+
