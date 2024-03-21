@@ -1,3 +1,3 @@
 class Evento < ApplicationRecord
-    has_many: membros
+    has_many :membros
 end
