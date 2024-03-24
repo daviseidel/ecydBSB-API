@@ -5,28 +5,14 @@
   </p>
 
   <p class="my-5">
-    <strong class="block font-medium mb-1">Descricao:</strong>
-    <%= evento.descricao %>
-  </p>
-
-  <p class="my-5">
     <strong class="block font-medium mb-1">Data:</strong>
     <%= evento.data %>
   </p>
 
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Local:</strong>
-    <%= evento.local %>
-  </p>
-
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Inscritos:</strong>
-    <%= evento.inscritos %>
-  </p>
 
   <% if action_name != "show" %>
-    <%= link_to "Show this evento", evento, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-    <%= link_to "Edit this evento", edit_evento_path(evento), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Detalhes", evento, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Editar", edit_evento_path(evento), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
     <hr class="mt-6">
   <% end %>
 </div>

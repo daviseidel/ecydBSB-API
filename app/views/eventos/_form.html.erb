@@ -1,7 +1,7 @@
 <%= form_with(model: evento, class: "contents") do |form| %>
   <% if evento.errors.any? %>
     <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
-      <h2><%= pluralize(evento.errors.count, "error") %> prohibited this evento from being saved:</h2>
+      <h2><%= pluralize(evento.errors.count, "error") %> causou a falha na criação do evento:</h2>
 
       <ul>
         <% evento.errors.each do |error| %>
