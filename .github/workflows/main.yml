@@ -8,7 +8,7 @@ jobs:
       - name: Render Deployment
         uses: sws2apps/render-deployment@v1.6.0
         with:
-          serviceId: zXEsve7sl6s
+          serviceId: srv-cnktomed3nmc73bpfnl0
           apiKey: rnd_yA9T3avI00Gm3jqvckFaU8yLJhuj
           multipleDeployment: false
 
