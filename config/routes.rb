@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :membros
   resources :eventos
   resources :membros
   root "pages#home"

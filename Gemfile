@@ -74,3 +74,7 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "devise", "~> 4.9"
+
+gem 'devise-tailwindcssed', git: "https://github.com/daviseidel/devise-tailwindcssed.git"
