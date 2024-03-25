@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_03_24_125153) do
+ActiveRecord::Schema[7.1].define(version: 2024_03_25_150209) do
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -47,6 +47,15 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_24_125153) do
     t.integer "inscritos"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "inscricaos", force: :cascade do |t|
+    t.integer "membro_id"
+    t.integer "evento_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["evento_id"], name: "index_inscricaos_on_evento_id"
+    t.index ["membro_id"], name: "index_inscricaos_on_membro_id"
   end
 
 # Could not dump table "membros" because of following StandardError
