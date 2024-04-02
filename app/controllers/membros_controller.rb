@@ -1,7 +1,6 @@
 class MembrosController < ApplicationController
   before_action :set_membro, only: %i[ show edit update destroy ]
-  before_action :authenticate_membro!
-  # http_basic_authenticate_with name: "ecyd", password: "bsb", except: [:index, :show]
+  before_action :authenticate_membro!, :except => [:index]
 
   # GET /membros or /membros.json
   def index
