@@ -1,4 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
+const colors = require('tailwindcss/colors')
 
 module.exports = {
   content: [
@@ -10,9 +11,18 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        sans: ['Helvetica', ...defaultTheme.fontFamily.sans],
+        trajan: ['Trajan Pro'],
+        calibri: ['Calibri']
       },
     },
+    colors: {
+      'RC-light': '#910803',
+      'RC-dark': '#990000',
+      'red': colors.red,
+      'blue': colors.blue,
+      'zinc': colors.zinc,
+    }
   },
   plugins: [
     require('@tailwindcss/forms'),
