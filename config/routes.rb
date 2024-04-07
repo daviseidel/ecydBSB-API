@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :membros
+  devise_for :membros, controllers: { omniauth_callbacks: 'membros/omniauth_callbacks' }
   resources :eventos
   resources :membros
   resources :inscricaos
