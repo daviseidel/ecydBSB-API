@@ -1,0 +1,9 @@
+<% @inscritos = Inscricao.where(membro_id: @membro.id) %>
+    <% @inscritos.each do |inscrito| %>
+      <% if inscrito.evento %>
+        <%= inscrito.evento.titulo %>
+      <% else %>
+        <p> [REMOVIDO] </p>
+      <% end %>
+      <br/>
+<% end %>

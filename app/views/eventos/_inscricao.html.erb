@@ -1,0 +1,6 @@
+<%= form_for Inscricao.new do |f| %>
+      <%= f.hidden_field :membro_id, value: @membro.id %>
+      <%= f.hidden_field :evento_id, value: @evento.id %>
+
+      <%= f.submit %>
+<% end %>

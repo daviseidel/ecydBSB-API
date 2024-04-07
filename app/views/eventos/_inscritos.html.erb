@@ -1,0 +1,10 @@
+<% @inscritos = Inscricao.all %>
+    <% @inscritos.each do |inscrito| %>
+      <% if inscrito.membro %>
+        <%= inscrito.membro.nome %>
+      <% else %>
+        <p> [REMOVIDO] </p>
+      <% end %>
+      <br/>
+    <% end %>
+<%= evento.inscritos %>
