@@ -21,7 +21,7 @@
 
   <p class="my-5">
     <strong class="block font-medium mb-1">Inscritos:</strong>
-    <%= evento.inscritos %>
+    <%= render "inscritos", evento: @evento%>
   </p>
 
   <% if action_name != "show" %>

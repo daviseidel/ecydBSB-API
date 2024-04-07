@@ -11,7 +11,9 @@
 
   <p class="my-5">
     <strong class="block font-medium mb-1">Rosto:</strong>
-    <%= image_tag(membro.rosto) %>
+    <% if membro.rosto? %>
+      <%= image_tag(membro.rosto) %>
+    <% end %>
   </p>
 
   <p class="my-5">
@@ -37,6 +39,11 @@
   <p class="my-5">
     <strong class="block font-medium mb-1">Restrição Alimentar:</strong>
     <%= membro.restricao %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Eventos:</strong>
+    <%= render "eventos", membro: @membro %>
   </p>
 
   <% if action_name != "show" %>
