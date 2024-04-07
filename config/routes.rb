@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   devise_for :membros
   resources :eventos
   resources :membros
+  resources :inscricaos
   root "pages#home"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
