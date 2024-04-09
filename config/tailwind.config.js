@@ -17,11 +17,14 @@ module.exports = {
       },
     },
     colors: {
-      'RC-light': '#910803',
+      'RC-light': '#C1272D',
       'RC-dark': '#990000',
       'red': colors.red,
       'blue': colors.blue,
       'zinc': colors.zinc,
+      'gray': {
+        100: '#C1272D',
+      },
     }
   },
   plugins: [
@@ -29,5 +32,6 @@ module.exports = {
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/typography'),
     require('@tailwindcss/container-queries'),
-  ]
+  ],
+  ...shadcnConfig,
 }

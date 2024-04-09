@@ -79,3 +79,4 @@ gem "devise", "~> 4.9"
 
 gem 'devise-tailwindcssed', git: "https://github.com/daviseidel/devise-tailwindcssed.git"
 gem 'omniauth-google-oauth2'
+gem "shadcn-ui", "~> 0.0.12"
