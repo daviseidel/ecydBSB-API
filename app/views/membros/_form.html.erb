@@ -51,6 +51,12 @@
     <%= form.text_field :restricao, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
   </div>
 
+  <div>OS CAMPOS A SEGUIR SÃO SOMENTE PARA O AMBIENTE DE TESTES</div>
+  <div class="my-5">
+    <%= form.label "Email" %>
+    <%= form.number_field :email, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
   <div class="inline">
     <%= form.submit "Enviar",  class: "rounded-lg py-3 px-5 bg-RC-dark text-white inline-block font-medium cursor-pointer" %>
   </div>

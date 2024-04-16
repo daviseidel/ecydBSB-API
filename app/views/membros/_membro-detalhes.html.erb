@@ -42,13 +42,18 @@
   </p>
 
   <p class="my-5">
+    <strong class="block font-medium mb-1">Email:</strong>
+    <%= membro.email %>
+  </p>
+
+  <p class="my-5">
     <strong class="block font-medium mb-1">Eventos:</strong>
     <%= render "eventos", membro: @membro %>
   </p>
 
   <% if action_name != "show" %>
-    <%= link_to "Show this membro", membro, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-    <%= link_to "Edit this membro", edit_membro_path(membro), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Mais Informações", membro, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Editar", edit_membro_path(membro), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
     <hr class="mt-6">
   <% end %>
 </div>

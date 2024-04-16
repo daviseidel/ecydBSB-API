@@ -1,6 +1,6 @@
 class MembrosController < ApplicationController
   before_action :set_membro, only: %i[ show edit update destroy ]
-  before_action :authenticate_membro!, :except => [:index]
+  before_action :authenticate_membro!, :except => [:index, :show]
 
   # GET /membros or /membros.json
   def index

@@ -58,8 +58,23 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_25_150209) do
     t.index ["membro_id"], name: "index_inscricaos_on_membro_id"
   end
 
-# Could not dump table "membros" because of following StandardError
-#   Unknown type 'attachment' for column 'rosto'
+  create_table "membros", force: :cascade do |t|
+    t.string "nome"
+    t.string "etapa"
+    t.string "rosto"
+    t.integer "rg"
+    t.integer "celular"
+    t.integer "anoDeInscricao"
+    t.integer "localEcyd"
+    t.string "restricao"
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
