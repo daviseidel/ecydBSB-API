@@ -1,11 +1,7 @@
-<div id="id">
-    <p class="my-5">
-        <strong class="block font-medium mb-1"><%= membro.nome %></strong>
-    </p>
-    
-    <% if action_name != "show" %>
-        <%= link_to "Mais Informações", membro, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-        <%= link_to "Editar", edit_membro_path(membro), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
-    <hr class="mt-6">
+<div id="id" class="my-5">
+  <%= render_card(title: membro.nome, subtitle: "Etapa: " + membro.etapa) do %>
+          <%= link_to "Mais Informações", membro, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+          <%= link_to "Editar", edit_membro_path(membro), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+      <hr class="mt-6">
   <% end %>
 </div>

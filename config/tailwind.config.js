@@ -1,5 +1,6 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
+const shadcnConfig = require("./shadcn.tailwind.js");
 
 module.exports = {
   content: [

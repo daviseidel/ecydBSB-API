@@ -58,9 +58,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_25_150209) do
     t.index ["membro_id"], name: "index_inscricaos_on_membro_id"
   end
 
-# Could not dump table "membros" because of following StandardError
-#   Unknown type 'attachment' for column 'rosto'
-
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
 end
