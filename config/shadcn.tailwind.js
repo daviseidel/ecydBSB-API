@@ -1,5 +1,5 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
-
+const colors = require("tailwindcss/colors");
 module.exports = {
   darkMode: ["class"],
   content: [
@@ -18,6 +18,14 @@ module.exports = {
     },
     extend: {
       colors: {
+        'RC-light': '#C1272D',
+        'RC-dark': '#990000',
+        'red': colors.red,
+        'blue': colors.blue,
+        'zinc': colors.zinc,
+        'gray': {
+          100: '#C1272D',
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

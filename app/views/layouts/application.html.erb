@@ -10,9 +10,15 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
+      
+      <% if notice.present? %>
+        <%= render_toast header: notice %>
+      <% end %>
 
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
+      <% if alert.present?  %>
+        <%= render_toast header: alert,
+          variant: :destructive %>
+      <% end %>  
 
   <body>
     <main class="container mx-auto mt-28 px-5 flex">

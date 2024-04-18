@@ -42,8 +42,15 @@
   </div>
 
   <div class="my-5">
+    <% items = [{:value => "1", name: "Everest Lago Sul"}, {:value => "2", name: "Guadalupe"}, {:value => "3", name: "Forzza"}, {:value => "4", name: "Everest Asa Norte"}] %>
     <%= form.label "Local de ECyD" %>
-    <%= form.number_field :localEcyd, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+    <%#= form.number_field :localEcyd, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  <%= render_combobox items do %>
+    <%= combobox_trigger do %>
+      Selecione o Local de ECyD
+    <% end %>
+  <% end %>
+  
   </div>
 
   <div class="my-5">
@@ -54,7 +61,7 @@
   <div>OS CAMPOS A SEGUIR SÃO SOMENTE PARA O AMBIENTE DE TESTES</div>
   <div class="my-5">
     <%= form.label "Email" %>
-    <%= form.number_field :email, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.text_field :email, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
   </div>
 
   <div class="inline">
